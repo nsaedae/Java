@@ -1,12 +1,13 @@
 package ch05;
 
 public class Account {
-	
-	// 속성(필드) : 무조건 캡슐화(private) 적용한다.
-	private String bank;
-	private String id;
-	private String name;
-	private int balance;
+	// 속성(필드) : 
+	//  - 무조건 캡슐화(private) 적용한다.
+	//  - 상속관계에서는 자식 클래스에서 참조 할 수 있도록 protected로 선언
+	protected String bank;
+	protected String id;
+	protected String name;
+	protected int balance;
 	
 	// 생성자(Constructor) : 객체 생성할 때 멤버변수를 초기화하는 메서드
 	public Account(String bank, String id, String name, int balance) {
