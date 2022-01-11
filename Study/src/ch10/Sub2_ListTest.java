@@ -59,6 +59,16 @@ public class Sub2_ListTest {
 		list3.add(new Apple("일본", 1000));
 		
 		System.out.println("list3 : "+list3);
+		
+		// 한국사과 출력
+		Apple a1 = list3.get(0);
+		a1.toString();
+		
+		// 미국사과 출력
+		list3.get(1).toString();
+		
+		// 일본사과 출력
+		list3.get(2).toString();
 	}
 }
 
